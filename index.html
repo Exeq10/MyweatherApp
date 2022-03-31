@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="App del clima" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>MyweatherApp</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="bg-app" id="bg">
+      <div class="overlay-app">
+        <h1>My weather App</h1>
+        <div class="commands">
+          <button onclick="BuscarClima()" class="btn --gps">
+            Detectar Ubicacion
+          </button>
+
+          <div>
+            <input type="text" id="cityName" />
+            <button onclick="BuscarCiudad()" class="btn --search">
+              Buscar Ciudad
+            </button>
+          </div>
+        </div>
+        <div class="card-weather"></div>
+      </div>
+    </section>
+
+    <footer class="footer">App creada por E/S</footer>
+
+    <script src="js/fetch.js"></script>
+  </body>
+</html>
